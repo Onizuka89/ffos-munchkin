@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="style/munchkincounter.css"/>
+	<script type="text/javascript" src="js/munchkincounter.js"></script>
+	<link rel="icon" type="image/png" href="applogos/logo32.png">
+	<title>Munchkin Counter</title>
+</head>
+<body>
+
+	<header>
+		<ul id="install-add">
+			<li><button id="btnInstall"></button></li>
+		</ul>
+		<h1>Munchkin Counter</h1>
+	</header>
+
+	<div id="body">
+		<div class="page" id="character" style="display: block;">
+			<div id="profile">
+				<img id="profilePicture" src="img-pd/archer.svg" alt="Munchkin profile picture" />
+				<input type="text" id="textContents" onKeyDown="storeUpdatedName()" value="Your name"></input>
+			</div><!-- profile -->
+			
+			<div class="counters">
+				<div id="levelCounter">
+					<h2>Level</h2>
+					<img id="levelUp" class="picker" src="img-pd/go-up.svg" alt="Level up" />
+					<h1 id="levelDisplay">1</h1>
+					<img id="levelDown" class="picker" src="img-pd/go-down.svg" alt="Level down" />
+				</div>
+				<div id="gearCounter">
+					<h2>Gear</h2>
+					<img id="gearUp" class="picker" src="img-pd/go-up.svg" alt="Gear up" />
+					<h1 id="gearDisplay">0</h1>
+					<img id="gearDown" class="picker" src="img-pd/go-down.svg" alt="Gear down" />
+				</div>
+				
+				<div id="power">
+					<h2>Power</h2>
+					<h1 id="powerDisplay">1</h1>
+				</div>
+			</div><!-- counters -->
+		</div><!-- character page -->
+		
+		
+		<div class="page" id="battle" style="display: none;">
+						
+			<div class="counters">
+				<div id="monsterLevelCounter">
+					<h2>Monster level</h2>
+					<img id="monsterLevelUp" class="picker" src="img-pd/go-up.svg" alt="Monster level up" />
+					<h1 id="monsterLevelDisplay">1</h1>
+					<img id="monsterLevelDown" class="picker" src="img-pd/go-down.svg" alt="Monster level down" />
+				</div>
+				<div id="battleModifier">
+					<h2>Modifier</h2>
+					<img id="battleModifierUp" class="picker" src="img-pd/go-up.svg" alt="Battle modifier up" />
+					<h1 id="battleModifierDisplay">0</h1>
+					<img id="battleModifierDown" class="picker" src="img-pd/go-down.svg" alt="Battle modifier down" />
+				</div>
+				
+				<div id="battlePowerDifference">
+					<h2>Power difference</h2>
+					<h1 id="battlePowerDifferenceDisplay">0</h1>
+					<h1 id="battleResultDisplay">Result</h1>
+				</div>
+			</div><!-- counters -->
+		</div><!-- battle page -->
+	</div>
+
+	<footer>
+		<ul>
+        <li><button id="characterButton">Character</button></li>
+        <li><button id="battleButton">Battle</button></li>
+      </ul>
+	</footer>
+	<img id="castle" src="img-pd/castle_outline.svg" alt="Castle image" />
+</body>
+</html>
