@@ -45,7 +45,7 @@ function Install() {
             that.triggerChange("uninstalled");
             that.installUrl = (
                location.href.substring(0, location.href.lastIndexOf("/")) +
-               "/manifest.webapp"
+               "/webapp.manifest"
             );
             that.doIt = function() {
                //*/ alert("Faking install from " + that.installUrl);
@@ -71,6 +71,7 @@ function Install() {
       request.onerror = function (error) {
          that.error = error;
          that.triggerChange("failed");
+		 console.log(error);
       };
    }else if ((typeof chrome !== "undefined") && chrome.webstore && chrome.app) {
       if (!chrome.app.isInstalled) {
@@ -157,11 +158,6 @@ function pickProfilePicture()
 
 function changeCounter()
 {
-	
-	if(navigator.vibrate != null)
-	{
-		navigator.vibrate(200);	
-	}
 	
 	if(this.id === "levelUp")
 	{
@@ -415,9 +411,13 @@ function restoreFromLocalStorage()
 	updatePower();
 }
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
 	setInstallButton("btnInstall");
 	setupListeners();
 	restoreFromLocalStorage();
 });
+
+
 

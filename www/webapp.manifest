@@ -1,0 +1,20 @@
+﻿{
+  "version": "1",
+  "name": "Munchkin Counter",
+  "launch_path": "ffos-munchkin/index.html",
+  "description": "A helper app for the avid Munchkin player",
+  "icons": {
+    "16": "/ffos-munchkin/applogos/logo16.png",
+    "32": "/ffos-munchkin/applogos/logo32.png",
+    "48": "/ffos-munchkin/applogos/logo48.png",
+    "64": "/ffos-munchkin/applogos/logo64.png",
+    "128": "/ffos-munchkin/applogos/logo128.png"
+  },
+  "developer": {
+    "name": "William Killerud",
+    "url": "http://www.killerud.com"
+  },
+  "appcache_path": "/ffos-munchkin/appcache.manifest",
+  "installs_allowed_from": ["*"],
+  "default_locale": "en"
+}
