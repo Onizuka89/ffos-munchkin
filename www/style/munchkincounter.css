@@ -3,43 +3,9 @@
   src: url('fonts/quasimodo.ttf');
 }
 
-@media screen and (max-device-width: 359px){
-	html, body, button{
-	  font-size: 10px;
-	}
-}
-
-@media screen and (min-device-width: 360px){
-	html, body, button{
-	  font-size: 12px;
-	}
-}
-
-@media screen and (min-device-width: 540px){
-	html, body, button{
-	  font-size: 18px;
-	}
-}
-
-@media screen and (min-device-width: 768px){
-	html, body, button{
-	  font-size: 25px;
-	}
-}
-
-@media screen and (min-device-width: 768px){
-	html, body, button{
-	  font-size: 28px;
-	}
-}
-
-@media screen and (min-device-width: 900px){
-	html, body, button{
-	  font-size: 35px;
-	}
-}
 
 html, body, button {
+	font-size: 12px;
 	width: 100%;
 	padding: 0;
 	margin: 0;
