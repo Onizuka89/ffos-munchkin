@@ -341,16 +341,20 @@ function setupListeners()
 {
 	var profilePicture = document.querySelector("#profilePicture");
 	profilePicture.addEventListener("touchstart", pickProfilePicture);
+	profilePicture.addEventListener("click", pickProfilePicture);
 	
 	var characterButton = document.querySelector("#characterButton");
 	characterButton.addEventListener("touchstart", showCharacterScreen);
+	characterButton.addEventListener("click", showCharacterScreen);
 	
 	var battleButton = document.querySelector("#battleButton");
 	battleButton.addEventListener("touchstart", showBattleScreen);
+	battleButton.addEventListener("click", showBattleScreen);
 	
 	var pickers = document.querySelectorAll(".picker");
 	for (var i=0, l=pickers.length; i<l; i++) {
 		pickers[i].addEventListener("touchstart", changeCounter);
+		pickers[i].addEventListener("click", changeCounter);
 	};	
 	
 	var characterName = document.querySelector("#textContents");
